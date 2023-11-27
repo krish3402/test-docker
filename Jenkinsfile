@@ -30,17 +30,17 @@ pipeline {
 
   
 
-  stages {
+  // stages {
 
-    stage('Clone repository') {
+  //   stage('Clone repository') {
 
-      steps {
+  //     steps {
 
-        git 'https://github.com/krish3402/test-docker.git'
+  //       git 'https://github.com/krish3402/test-docker.git'
 
-      }
+  //     }
 
-    }
+  //   }
 
     
    
