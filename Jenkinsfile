@@ -8,7 +8,7 @@ pipeline {
                     // Some code or commands
 
                     // Print a message to the Jenkins console
-                     echo testing
+                      echo 'Hello, Jenkins! This is an example message.'
                     // More code or commands
                 }
             }
