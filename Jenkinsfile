@@ -23,3 +23,44 @@ pipeline {
         }
     }
 }
+pipeline {
+
+  agent any
+
+
+  
+
+  stages {
+
+    stage('Clone repository') {
+
+      steps {
+
+        git 'https://github.com/krish3402/test-docker.git'
+
+      }
+
+    }
+
+    
+   
+
+    stage('Deploy to Kubernetes') {
+
+      steps {
+
+        kubernetesDeploy(
+
+          configs: 'nginx.yaml',
+
+          kubeconfigId: 'testing'
+
+        )
+
+      }
+
+    }
+
+  }
+
+}
