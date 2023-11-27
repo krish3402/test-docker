@@ -53,7 +53,7 @@ pipeline {
 
           configs: 'nginx.yaml',
 
-          kubeconfigId: 'testing'
+          kubeconfigId: '1fb96fcc-7c40-424f-94fb-6b1a6acc52a7'
 
         )
 
