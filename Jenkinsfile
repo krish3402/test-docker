@@ -2,18 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Example Stage') {
-            steps {
-                script {
-                    // Some code or commands
-
-                    // Print a message to the Jenkins console
-                      echo 'Hello, Jenkins! This is an example message.'
-                    // More code or commands
-                }
+        stage('Deploying React.js container to Kubernetes') {
+          steps {
+            script {
+              kubernetesDeploy(configs: "nginx.yaml", kubeConfig: [path: ''], kubeconfigId: '1fb96fcc-7c40-424f-94fb-6b1a6acc52a7')
             }
+          }
         }
-    }
 
     post {
         success {
