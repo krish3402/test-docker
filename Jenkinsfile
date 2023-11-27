@@ -8,7 +8,7 @@ pipeline {
                     // Some code or commands
 
                     // Print a message to the Jenkins console
-                    echo 'Hello, Jenkins! This is an example message.'
+                    kubernetesDeploy configs: 'nginx.yaml', kubeConfig: [path: ''], kubeconfigId: '1fb96fcc-7c40-424f-94fb-6b1a6acc52a7', secretName: '', ssh: [sshCredentialsId: '*', sshServer: ''], textCredentials: [certificateAuthorityData: '', clientCertificateData: '', clientKeyData: '', serverUrl: 'https://']
 
                     // More code or commands
                 }
