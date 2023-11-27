@@ -30,7 +30,7 @@ pipeline {
 
   
 
-  // stages {
+   stages {
 
   //   stage('Clone repository') {
 
